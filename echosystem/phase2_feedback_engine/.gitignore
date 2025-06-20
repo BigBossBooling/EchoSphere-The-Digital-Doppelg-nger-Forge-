@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.project
+.pydevproject
+.settings/
+*.tar.gz
+
+# Virtualenv
+.env
+.venv
+env/
+venv/
+ENV/
+VENV/
+pip-freeze.txt
+requirements.txt # If using poetry, this might be for export only
+
+# Poetry
+poetry.lock # Usually committed, but can be gitignored in some setups if pyproject.toml is source of truth
+# If you want to ignore the lock file, uncomment the line above.
+# For this project, we will commit poetry.lock as it ensures deterministic builds.
+
+# Build artifacts
+dist/
+build/
+*.egg
+*.whl
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+nosetests.xml
+coverage.xml
+
+# IDE / Editor specific
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env.*
+!.env.example # Keep .env.example in git
+
+# Other
+*.swp
+*.swo
+*~
